@@ -89,7 +89,7 @@
 #define CH_LBKT RA(LBKT)          // [
 #define CH_RBKT RA(RBKT)          // ]
 // Row 3
-#define CH_LBRC RA(SEMI)          // {
+#define CH_LBRC RA(APOS)          // {
 #define CH_RBRC RA(NON_US_HASH)   // }
 
 // Row 4
