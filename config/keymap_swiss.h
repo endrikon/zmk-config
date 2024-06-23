@@ -93,4 +93,4 @@
 #define CH_RBRC RA(NON_US_HASH)   // }
 
 // Row 4
-#define CH_BSLH LS(NON_US_BSLH)   // \
+#define CH_BSLH LS(NON_US_BSLH)   // backslash
