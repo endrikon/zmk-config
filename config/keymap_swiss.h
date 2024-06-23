@@ -81,7 +81,7 @@
 #define CH_PIPE RA(N1)            // |
 #define CH_AT RA(N2)              // @
 #define CH_HASH RA(N3)            // #
-#define CH_TILDE RA()             // ~
+#define CH_TILDE RA(EQUAL)        // ~
 #define CH_BKTK LS(EQUAL)         // ``
 
 // Row 2
