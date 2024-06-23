@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "keymap_italian.h"
+#include "keymap_swiss.h"
 
 // Layer definitions
     #define BASE 0
@@ -70,8 +70,8 @@
        		default_layer {
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp IT_OGRV
-		&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp IT_UGRV
+		&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp CH_OGRV
+		&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp CH_UGRV
              &mo EXT &mt LSHIFT SPACE           &kp SPACE &sl SYM
 		>;
 		};
@@ -80,8 +80,8 @@
        		sym_layer {
 		bindings = <
 		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-		&kp IT_LESS &kp IT_USD &kp IT_LPAR &kp IT_LBRC &kp IT_LBKT  &kp IT_EQL &kp IT_QUES &kp IT_SQUOT &kp IT_MINUS &kp IT_AST
-		&kp IT_GREAT &kp IT_PERC &kp IT_RPAR &kp IT_RBRC &kp IT_RBKT 	&kp IT_AT &kp IT_EXCL &kp IT_DQUOT &kp IT_PLUS &kp IT_FSLH
+		&kp CH_LESS &kp CH_USD &kp CH_LPAR &kp CH_LBRC &kp CH_LBKT  &kp CH_EQL &kp CH_QUES &kp CH_SQUOT &kp CH_MINUS &kp CH_AST
+		&kp CH_GREAT &kp CH_PERC &kp CH_RPAR &kp CH_RBRC &kp CH_RBKT 	&kp CH_AT &kp CH_EXCL &kp CH_DQUOT &kp CH_PLUS &kp CH_FSLH
 					                                        &mo FNC  &mo SYM2       &trans &trans
 		>;
 		};
@@ -109,19 +109,19 @@
         // Low frequency symbols.
        		symbols_2_layer {
 		bindings = <
-		&kp IT_CARET &kp IT_UNDER &kp IT_PND &kp IT_EUR &kp IT_HASH         &none &none &none &none &none 
-		&kp IT_BKTK &kp IT_TILDE &kp IT_BSLH &kp IT_PIPE &kp IT_AND         &none &none &none &none &none
-		&none 			&none 			 &kp IT_SECT &kp IT_CCED &kp IT_DEG				  &none &none &none &none &none
-          				           												&none &none        	&none &none 
+		&kp CH_CARET &kp CH_UNDER &kp CH_PND &kp CH_EUR &kp CH_HASH         &none &none &none &none &none 
+		&kp CH_BKTK &kp CH_TILDE &kp CH_BSLH &kp CH_PIPE &kp CH_AND         &none &none &none &none &none
+		&none &none &kp CH_SECT &kp CH_CCED &kp CH_DEG				        &none &none &none &none &none
+          				           						&none &none        	&none &none 
 		>;
 		};
 
         // Used to type regional accents.
        		accent_layer {
 		bindings = <
-		&none &none &none &kp IT_CEGR &none                         &none &none &none &none &none 
-		&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU &none &none &none &none &none
-		&none &none &none &kp IT_UGRV &none                         &none &none &none &none &none
+		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5                         &none &none &none &none &none 
+		&kp N6 &kp N7 &kp N8 &kp N9 &kp N0                         &none &none &none &none &none
+		&kp CH_EGRV &kp CH_EACC &kp CH_AACC &kp CH_AGRV &none      &sk LGUI &none &none &none &none
           				     &none &none                         &none &none 
 		>;
 		};
