@@ -16,7 +16,7 @@
     #define FNC 3
     #define SYM2 4
     #define ACCENT 5
-		#define SETTINGS 6
+	#define SETTINGS 6
 // -----------------
 
 &mt {
@@ -69,60 +69,60 @@
         // Base alpha layer
        		default_layer {
 		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp CH_OGRV
-		&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp CH_UGRV
-             &mo EXT &mt LSHIFT SPACE           &kp SPACE &sl SYM
+		&kp Q &kp W &kp E   &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
+		&kp A &kp S &kp D   &kp F &kp G           &kp H &kp J  &kp K     &kp L   &kp CH_PLUS
+		&kp Z &kp X &kp C   &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp CH_MINUS
+                    &mo EXT &mt LSHIFT SPACE      &kp SPACE    &sl SYM
 		>;
 		};
 
         // Numbers and high frequency symbols
        		sym_layer {
 		bindings = <
-		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-		&kp CH_LESS &kp CH_USD &kp CH_LPAR &kp CH_LBRC &kp CH_LBKT  &kp CH_EQL &kp CH_QUES &kp CH_SQUOT &kp CH_MINUS &kp CH_AST
-		&kp CH_GREAT &kp CH_PERC &kp CH_RPAR &kp CH_RBRC &kp CH_RBKT 	&kp CH_AT &kp CH_EXCL &kp CH_DQUOT &kp CH_PLUS &kp CH_FSLH
-					                                        &mo FNC  &mo SYM2       &trans &trans
+		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                        &kp N6     &kp N7      &kp N8       &kp N9        &kp N0
+		&kp CH_LESS  &kp CH_USD  &kp CH_LPAR &kp CH_LBRC &kp CH_LBKT    &kp CH_EQL &kp CH_QUES &kp CH_SQUOT &kp CH_QUOTES &kp CH_AST
+		&kp CH_GREAT &kp CH_PERC &kp CH_RPAR &kp CH_RBRC &kp CH_RBKT 	&kp CH_AT  &kp CH_EXCL &kp CH_DQUOT &kp CH_BSLH   &kp CH_FSLH
+					                         &mo FNC     &mo SYM2       &trans     &trans
 		>;
 		};
 
         // Main modifiers and arrow keys
 		    ext_layer {
 		bindings = <
-		&kp ESC  &trans &trans  &trans  &trans    			        &kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
-		&sk LALT &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT 			&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
-		&kp LC(Z)  &kp LC(X) &kp LC(C) &kp TAB   &kp LC(V)          &kp LC(BSPC) &kp BSPC &trans &trans  &trans
-					                        &trans &kp LCTRL    &kp ENTER  &mo FNC 
+		&kp ESC   &trans    &trans     &trans    &trans    			&kp PG_UP    &kp HOME &kp UP   &kp END   &kp CAPS
+		&sk LALT  &sk LGUI  &sk LSHIFT &sk LCTRL &kp RALT 			&kp PG_DN    &kp LEFT &kp DOWN &kp RIGHT &kp DEL
+		&kp LC(Z) &kp LC(X) &kp LC(C)  &kp TAB   &kp LC(V)          &kp LC(BSPC) &kp BSPC &trans   &trans    &trans
+					                   &trans    &kp LCTRL          &kp ENTER    &mo FNC 
 		>;
 		};
 
         // Function keys with modifiers
        		fnc_layer {
 		bindings = <
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
-		&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
-		&none &none &none &none &none				          &none &none &none &none &none 
-          				           &none &none              &none &none  
+		&kp F1   &kp F2   &kp F3     &kp F4    &kp F5       &kp F6  &kp F7  &kp F8          &kp F9 &kp F10 
+		&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12 &kp PRINTSCREEN &trans &trans
+		&none    &none    &none      &none     &none		&none   &none   &none           &none  &none 
+          				             &none     &none        &none   &none  
 		>;
 		};
 
         // Low frequency symbols.
        		symbols_2_layer {
 		bindings = <
-		&kp CH_CARET &kp CH_UNDER &kp CH_PND &kp CH_EUR &kp CH_HASH         &none &none &none &none &none 
-		&kp CH_BKTK &kp CH_TILDE &kp CH_BSLH &kp CH_PIPE &kp CH_AND         &none &none &none &none &none
-		&none &none &kp CH_SECT &kp CH_CCED &kp CH_DEG				        &none &none &none &none &none
-          				           						&none &none        	&none &none 
+		&kp CH_CARET  &kp CH_UNDER &kp CH_PND  &kp CH_EUR  &kp CH_HASH        &none &none &none &none &none 
+		&kp CH_QUOTES &kp CH_TILDE &kp CH_BSLH &kp CH_PIPE &kp CH_AND         &none &none &none &none &none
+		&none         &none        &kp CH_SECT &kp CH_CCED &kp CH_DEG		  &none &none &none &none &none
+          				           			   &none       &none        	  &none &none 
 		>;
 		};
 
         // Used to type regional accents.
        		accent_layer {
 		bindings = <
-		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5                         &none &none &none &none &none 
-		&kp N6 &kp N7 &kp N8 &kp N9 &kp N0                         &none &none &none &none &none
-		&kp CH_EGRV &kp CH_EACC &kp CH_AACC &kp CH_AGRV &none      &sk LGUI &none &none &none &none
-          				     &none &none                         &none &none 
+		&none       &none       &none       &none       &kp CH_UGRV   &none &none &none &none &none 
+		&kp CH_EGRV &kp CH_EACC &kp CH_AACC &kp CH_AGRV &kp CH_OGRV   &none &none &none &none &none
+		&none       &none       &none       &none       &none         &none &none &none &none &none
+          				                    &none       &none         &none &none 
 		>;
 		};
 
@@ -130,9 +130,9 @@
        		settings_layer {
 		bindings = <
 		&bootloader &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &none &unstick &none &bootloader 
-		&none &none &none &none      &bt BT_SEL 1 						  &bt BT_SEL 4 &none &none &none &none
-		&none &none &none &none      &bt BT_SEL 2               &bt BT_SEL 5 &none &none &none &none
-          				     &none &none                         &none &none 
+		&none       &none &none &none      &bt BT_SEL 1               &bt BT_SEL 4 &none &none    &none &none
+		&none       &none &none &none      &bt BT_SEL 2               &bt BT_SEL 5 &none &none    &none &none
+          				        &none      &none                      &none        &none 
 		>;
 		};
         

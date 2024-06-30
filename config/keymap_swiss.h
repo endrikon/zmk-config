@@ -24,7 +24,7 @@
 #define CH_USD NON_US_HASH       // $
 // Row 4
 #define CH_LESS NON_US_BSLH      // <
-#define CH_MINUS RBKT            // -
+#define CH_MINUS SLASH           // -
 
 /* Shifted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -40,7 +40,7 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define CH_DEG GRAVE             // °
+#define CH_DEG LS(GRAVE)         // °
 #define CH_PLUS LS(N1)           // +
 #define CH_DQUOT LS(N2)          // "
 #define CH_AST LS(N3)            // *
@@ -82,7 +82,6 @@
 #define CH_AT RA(N2)              // @
 #define CH_HASH RA(N3)            // #
 #define CH_TILDE RA(EQUAL)        // ~
-#define CH_BKTK LS(EQUAL)         // ``
 
 // Row 2
 #define CH_EUR RA(E)              // €
@@ -93,4 +92,4 @@
 #define CH_RBRC RA(NON_US_HASH)   // }
 
 // Row 4
-#define CH_BSLH LS(NON_US_BSLH)   // backslash
+#define CH_BSLH RA(NON_US_BSLH)   // backslash
